@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | SOC Security Lab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | SOC Security Lab</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body style="font-family:Arial;text-align:center;padding:80px">
 
-  <h1>SOC Security Lab</h1>
-  <p>Authenticate with Auth0</p>
+<body>
 
-  <button id="login">Sign in</button>
+<div style="display:flex;justify-content:center;align-items:center;height:100vh;padding:20px;">
 
-  <!-- Auth0 SDK -->
-  <script src="https://cdn.auth0.com/js/auth0-spa-js/2.1/auth0-spa-js.production.js"></script>
+<div style="width:420px;background:rgba(15,23,42,.85);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:40px;text-align:center;backdrop-filter:blur(10px);">
 
-  <!-- IMPORTANT: module -->
-  <script type="module" src="js/auth.js"></script>
+<div style="font-size:42px;margin-bottom:16px;">🛡️</div>
+
+<h1 style="font-size:32px;margin-bottom:8px;">SOC Security Lab</h1>
+
+<p style="color:#cbd5e1;margin-bottom:32px;">
+Authenticate securely using Auth0
+</p>
+
+<button id="login" style="width:100%;padding:15px;background:#f97316;color:white;border:none;border-radius:10px;font-size:16px;font-weight:600;cursor:pointer;">
+Login with Auth0
+</button>
+
+<div style="margin-top:28px;color:#64748b;font-size:14px;">
+Cloudflare Pages · OAuth 2.0 · PKCE
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.auth0.com/js/auth0-spa-js/2.1/auth0-spa-js.production.js"></script>
+<script type="module" src="js/auth.js"></script>
 
 </body>
 </html>

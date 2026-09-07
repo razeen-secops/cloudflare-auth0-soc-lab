@@ -3,10 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Security Assessment Lab</title>
+  <title>SOC Security Assessment Lab</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="font-family: Arial; text-align:center; padding:80px;">
-  <h1>Cloudflare + Auth0 SOC Lab</h1>
-  <p>My Security Assessment Project</p>
+<body>
+
+  <nav>
+    <h2>🛡️ SOC Security Lab</h2>
+
+    <div>
+      <a href="index.html">Home</a>
+      <a href="login.html" class="login-link">Login</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+
+    <h1>Cloudflare + Auth0 + Microsoft Sentinel</h1>
+
+    <p>
+      An enterprise security assessment project demonstrating web security,
+      identity protection, SIEM log ingestion, threat detection, and incident
+      response using Cloudflare, Auth0 and Microsoft Sentinel.
+    </p>
+
+    <div class="buttons">
+      <a href="login.html" class="btn primary">
+        Login with Auth0
+      </a>
+
+      <a href="#architecture" class="btn secondary">
+        View Architecture
+      </a>
+    </div>
+
+  </section>
+
+  <section class="features">
+
+    <div class="card">
+      <h3>Cloudflare</h3>
+      <p>
+        WAF events, HTTP request telemetry, bot protection and edge security.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Auth0</h3>
+      <p>
+        OAuth 2.0 authentication, MFA, audit logs and identity monitoring.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Microsoft Sentinel</h3>
+      <p>
+        Log correlation, KQL hunting, analytics rules and incident creation.
+      </p>
+    </div>
+
+  </section>
+
+  <section id="architecture" class="architecture">
+    <h2>Security Architecture</h2>
+
+    <p>
+      Visitors access a Cloudflare-hosted application, authenticate through
+      Auth0, and both web and identity telemetry are ingested into
+      Microsoft Sentinel for detection and investigation.
+    </p>
+  </section>
+
+  <footer>
+    <p>Security Assessment Lab • Built on Cloudflare Pages</p>
+  </footer>
+
 </body>
 </html>

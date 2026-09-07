@@ -8,75 +8,98 @@
 </head>
 <body>
 
+<header class="navbar">
+  <div class="logo">
+    🛡️ <span>SOC Security Lab</span>
+  </div>
+
   <nav>
-    <h2>🛡️ SOC Security Lab</h2>
-
-    <div>
-      <a href="index.html">Home</a>
-      <a href="login.html" class="login-link">Login</a>
-    </div>
+    <a href="#features">Features</a>
+    <a href="#architecture">Architecture</a>
+    <a href="login.html" class="nav-btn">Login</a>
   </nav>
+</header>
 
-  <section class="hero">
+<section class="hero">
 
-    <h1>Cloudflare + Auth0 + Microsoft Sentinel</h1>
+  <div class="badge">
+    Cloudflare • Auth0 • Microsoft Sentinel
+  </div>
 
-    <p>
-      An enterprise security assessment project demonstrating web security,
-      identity protection, SIEM log ingestion, threat detection, and incident
-      response using Cloudflare, Auth0 and Microsoft Sentinel.
-    </p>
+  <h1>
+    Enterprise Security <br>
+    Assessment Platform
+  </h1>
 
-    <div class="buttons">
-      <a href="login.html" class="btn primary">
-        Login with Auth0
-      </a>
+  <p>
+    A realistic SOC project demonstrating web application security,
+    identity protection, SIEM engineering, threat detection and incident
+    response using Cloudflare, Auth0 and Microsoft Sentinel.
+  </p>
 
-      <a href="#architecture" class="btn secondary">
-        View Architecture
-      </a>
+  <div class="hero-buttons">
+    <a href="login.html" class="primary">Login with Auth0</a>
+    <a href="#features" class="secondary">Explore Project</a>
+  </div>
+
+</section>
+
+<section id="features" class="features">
+
+  <div class="feature-card">
+    <div class="icon">☁️</div>
+    <h3>Cloudflare</h3>
+    <p>HTTP telemetry, WAF events, bot mitigation and edge security analytics.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="icon">🔐</div>
+    <h3>Auth0</h3>
+    <p>OAuth 2.0 authentication, MFA, audit logs and identity monitoring.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="icon">🛰️</div>
+    <h3>Microsoft Sentinel</h3>
+    <p>KQL hunting, analytics rules, workbooks and automated incidents.</p>
+  </div>
+
+</section>
+
+<section id="architecture" class="architecture">
+
+  <h2>Security Architecture</h2>
+
+  <p>
+    Visitors authenticate through Auth0 while Cloudflare protects the
+    application. Security telemetry is correlated inside Microsoft Sentinel.
+  </p>
+
+  <div class="diagram">
+
+    <div class="node">Users</div>
+    <div class="arrow">↓</div>
+
+    <div class="node orange">Cloudflare Pages</div>
+    <div class="arrow">↓</div>
+
+    <div class="node purple">Auth0 Identity</div>
+
+    <div class="split">
+      <div class="branch blue">HTTP + WAF Logs</div>
+      <div class="branch pink">Authentication Logs</div>
     </div>
 
-  </section>
+    <div class="arrow">↓</div>
+    <div class="node green">Microsoft Sentinel</div>
 
-  <section class="features">
+  </div>
 
-    <div class="card">
-      <h3>Cloudflare</h3>
-      <p>
-        WAF events, HTTP request telemetry, bot protection and edge security.
-      </p>
-    </div>
+</section>
 
-    <div class="card">
-      <h3>Auth0</h3>
-      <p>
-        OAuth 2.0 authentication, MFA, audit logs and identity monitoring.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Microsoft Sentinel</h3>
-      <p>
-        Log correlation, KQL hunting, analytics rules and incident creation.
-      </p>
-    </div>
-
-  </section>
-
-  <section id="architecture" class="architecture">
-    <h2>Security Architecture</h2>
-
-    <p>
-      Visitors access a Cloudflare-hosted application, authenticate through
-      Auth0, and both web and identity telemetry are ingested into
-      Microsoft Sentinel for detection and investigation.
-    </p>
-  </section>
-
-  <footer>
-    <p>Security Assessment Lab • Built on Cloudflare Pages</p>
-  </footer>
+<footer>
+  © 2026 SOC Security Assessment Lab · Built with Cloudflare Pages
+</footer>
 
 </body>
 </html>
